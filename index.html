@@ -7,6 +7,12 @@
     <title>Household Income Expenditure</title>
 </head>
 <body>
+    <div class="loader">
+        <h1>HTML</h1>
+        <h1>CSS</h1>
+        <h1>Javascript</h1>
+    </div>
+
     <div id="main_div">
         <section>
             <h2>Household Income Expenditure</h2>
@@ -16,41 +22,42 @@
                 <img src="assets/Calculate.jpg" alt="image>Calculate">
             </nav>
             <nav id="form_section">
-                <h4>Office income<span>(on this month)</span> </h4>
-                <label for="inc">Income :</label>
-                <input id="inc" type="number"><br>
+                <h4 class="tittle">Office income<span>(on this month)</span> </h4>
+                <label class="lebel" for="inc">Income :</label>
+                <span class="inc"><input class="input" id="inc" type="number"><br></span>
                 <p id="demo_1"></p>
 
-                <h4>Office expenditure<span>(on this month)</span> </h4>
-                <label for="oRent">Office Rent :</label>
-                <input id="oRent" type="number"><br>
+                <h4 class="tittle">Office expenditure<span>(on this month)</span> </h4>
+                <label class="lebel" for="oRent">Office Rent :</label>
+                <span class="oRent"><input class="input" id="oRent" type="number"><br></span>
                 <p id="demo_2"></p>
 
-                <label for="eSlary">Employee Salary :</label>
-                <input id="eSlary" type="number"><br>
+                <label class="lebel" for="eSlary">Employee Salary :</label>
+                <input class="input" id="eSlary" type="number"><br>
                 <p id="demo_3"></p>
 
-                <h4>Family expenditure<span>(on this month)</span> </h4>
-                <label for="hRent">House Rent :</label>
-                <input id="hRent" type="number"><br>
+                <h4 class="tittle">Family expenditure<span>(on this month)</span> </h4>
+                <label class="lebel" for="hRent">House Rent :</label>
+                <span class="hRent"></span><input class="input" id="hRent" type="number"><br>
                 <p id="demo_4"></p>
 
-                <label for="other">Others :</label>
-                <input id="other" type="number"><br>
+                <label class="lebel" for="other">Others :</label>
+                <span class="other"><input class="input" id="other" type="number"></span><br>
 
-                 <input type="submit" value="Calculate" onclick="calculate()">
+                <div class="button_1"><input type="submit" value="Calculate" onclick="calculate()" class="button button_1_1"></div>
 
-                 <p>Total Expenditure :<span id="demo">0</span></p>
-                 <p>Balance : <span id="balace">0</span></p>
+                 <p class="result">Total Expenditure :<span id="demo">0</span></p>
+                 <p class="result">Balance : <span id="balace">0</span></p>
+                <nav class="save">
+                        <label for="saving">Savings :</label>
+                        <input class="input_save" id="saving" type="number"><p class="parsent">%</p>
+                        <p id="demo_6"></p>
+                        
+                        <input type="submit" value="Save" onclick="mySavings()" class="button button_2">
+                </nav>
 
-                 <label for="saving">Savings :</label>
-                <input id="saving" type="number"><p>%</p>
-                <p id="demo_6"></p>
-                 
-                <input type="submit" value="Save" onclick="mySavings()">
-
-                <p>Saving Balance : <span id="save">0</span></p>
-                <p>Remaining Balance : <span id="rBalance">0</span></p>
+                <p class="result">Saving Balance : <span id="save">0</span></p>
+                <p class="result">Remaining Balance : <span id="rBalance">0</span></p>
             </nav>
             
         </section>

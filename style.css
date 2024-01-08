@@ -8,6 +8,67 @@ body{
     width: 100%;
     
 }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.loader{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader h1{
+    color: transparent;
+    font-size: 4vw;
+    background: linear-gradient(to right, #DFFF00,orange,#FF1300);
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+.loader h1:nth-child(2){
+   animation-delay: 2s;
+}
+.loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
 #main_div{
     height: 100vh;
     width: 100%;
@@ -28,28 +89,114 @@ body{
     }
 }
 #container{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     margin-top: 20px;
     display: flex;
-    border: 2px solid red;
+    
 }
 #img_section{
     height: 100%;
-    width: 50%;
-    border: 2px solid lime;
+    width: 70%;
+    
 }
 #img_section img{
-    height: 100%;
     width: 100%;
+    height: 720px;
 }
 #form_section{
     height: 85%;
     width: 45%;
-    border: 2px solid orange;
     margin: 30px;
     
 }
 #form_section h4{
   text-align: center;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ #form_section input{
+    margin: 5px 10px;
+    justify-content: center;
+ }
+ .input{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 2px solid #000;
+ }
+ .lebel{
+    padding-top: 10px;
+    font-size: 18px;
+ }
+ .parsent{
+    display: inline-block;
+    padding-top: 15px;
+    font-size: 18px;
+ }
+ .save{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ .button{
+    padding: 10px 30px;
+    border: 2px solid #000;
+ }
+ .button_1{
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ .button_1_1{
+    border-radius: 50px;
+    
+ }
+ .button_1_1:hover{
+    color: #fff;
+    background-color: #000;
+ }
+ .save label{
+    padding-top: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    
+ }
+ .result{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 900;
+ }
+ .inc{
+    margin-left: 65px;
+ }
+.oRent{
+    margin-left: 37px;
+}
+.hRent{
+    margin-left: 40px;
+}
+.other{
+    margin-left: 75px;
+}
+.tittle{
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.input_save{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+.button_2{
+    border-radius: 10px;
+}
+.button_2:hover{
+    color: #fff;
+    background-color: #000;
+}
+
