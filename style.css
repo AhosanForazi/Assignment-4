@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    
+}
+#main_div{
+    height: 100vh;
+    width: 100%;
+    
+}
+#main_div h2{
+    font-size: 25px;
+    color: transparent;
+    text-align: center;
+    background: linear-gradient(to right, orange,rgba(240, 50, 50, 0.717));
+    -webkit-background-clip: text;
+    text-shadow: 0 0 2px orange;
+    animation: anime 1s infinite alternate;
+}
+@keyframes anime{
+    100%{
+        text-shadow: 0 0 2px red;
+    }
+}
+#container{
+    height: 80vh;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    border: 2px solid red;
+}
+#img_section{
+    height: 100%;
+    width: 50%;
+    border: 2px solid lime;
+}
+#img_section img{
+    height: 100%;
+    width: 100%;
+}
+#form_section{
+    height: 85%;
+    width: 45%;
+    border: 2px solid orange;
+    margin: 30px;
+    
+}
+#form_section h4{
+  text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Household Income Expenditure</title>
+</head>
+<body>
+    <div id="main_div">
+        <section>
+            <h2>Household Income Expenditure</h2>
+        </section>
+        <section id="container">
+            <nav id="img_section">
+                <img src="assets/Calculate.jpg" alt="image>Calculate">
+            </nav>
+            <nav id="form_section">
+                <h4>Office income<span>(on this month)</span> </h4>
+                <label for="inc">Income :</label>
+                <input id="inc" type="number"><br>
+                <p id="demo_1"></p>
+
+                <h4>Office expenditure<span>(on this month)</span> </h4>
+                <label for="oRent">Office Rent :</label>
+                <input id="oRent" type="number"><br>
+                <p id="demo_2"></p>
+
+                <label for="eSlary">Employee Salary :</label>
+                <input id="eSlary" type="number"><br>
+                <p id="demo_3"></p>
+
+                <h4>Family expenditure<span>(on this month)</span> </h4>
+                <label for="hRent">House Rent :</label>
+                <input id="hRent" type="number"><br>
+                <p id="demo_4"></p>
+
+                <label for="other">Others :</label>
+                <input id="other" type="number"><br>
+
+                 <input type="submit" value="Calculate" onclick="calculate()">
+
+                 <p>Total Expenditure :<span id="demo">0</span></p>
+                 <p>Balance : <span id="balace">0</span></p>
+
+                 <label for="saving">Savings :</label>
+                <input id="saving" type="number"><p>%</p>
+                <p id="demo_6"></p>
+                 
+                <input type="submit" value="Save" onclick="calculate()">
+
+                <p>Saving Balance : <span id="save">0</span></p>
+                <p>Remaining Balance : <span id="rBalance">0</span></p>
+                
+            </nav>
+            
+        </section>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
