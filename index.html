@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Household Income Expenditure</title>
 </head>
+
 <body>
     <div class="loader">
         <h1>HTML</h1>
@@ -44,27 +46,29 @@
                 <label class="lebel" for="other">Others :</label>
                 <span class="other"><input class="input" id="other" type="number"></span><br>
 
-                <div class="button_1"><input type="submit" value="Calculate" onclick="calculate()" class="button button_1_1"></div>
+                <div class="button_1"><input type="submit" value="Calculate" onclick="calculate()"
+                        class="button button_1_1"></div>
 
-                 <p class="result">Total Expenditure :<span id="demo">0</span></p>
-                 <p class="result">Balance : <span id="balace">0</span></p>
+                <p class="result">Total Expenditure :<span id="demo">0</span></p>
+                <p class="result">Balance : <span id="balace">0</span></p>
                 <nav class="save">
-                        <label for="saving">Savings :</label>
-                        <input class="input_save" id="saving" placeholder="%" type="number">
-                        <p id="demo_6"></p>
-                        
-                        <input type="submit" value="Save" onclick="mySavings()" class="button button_2">
+                    <label for="saving">Savings :</label>
+                    <input class="input_save" id="saving" placeholder="%" type="number">
+                    <p id="demo_6"></p>
+
+                    <input type="submit" value="Save" onclick="mySavings()" class="button button_2">
                 </nav>
 
                 <p class="result">Saving Balance : <span id="save">0</span></p>
                 <p class="result">Remaining Balance : <span id="rBalance">0</span></p>
                 <p class="extra_padding"></p>
             </nav>
-            
+
         </section>
-        
+
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
