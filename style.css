@@ -132,11 +132,7 @@ input::-webkit-inner-spin-button {
     padding-top: 10px;
     font-size: 18px;
  }
- .parsent{
-    display: inline-block;
-    padding-top: 15px;
-    font-size: 18px;
- }
+
  .save{
     display: flex;
     margin-top: 20px;
@@ -200,3 +196,140 @@ input::-webkit-inner-spin-button {
     background-color: #000;
 }
 
+
+
+
+
+
+
+
+@media (max-width :600px) {
+    #main_div{
+        height: 100vh;
+        width: 100%;
+        
+    }
+    #main_div h2{
+        font-size: 25px;
+        color: transparent;
+        text-align: center;
+        background: linear-gradient(to right, orange,rgba(240, 50, 50, 0.717));
+        -webkit-background-clip: text;
+        text-shadow: 0 0 2px orange;
+        animation: anime 1s infinite alternate;
+    }
+    @keyframes anime{
+        100%{
+            text-shadow: 0 0 2px red;
+        }
+    }
+    #container{
+        height: 100vh;
+        width: 100%;
+        
+        
+    }
+    #img_section{
+        height: 100%;
+        width: 70%;
+        visibility: hidden;
+    }
+    #form_section{
+        height: 95%;
+        width: 100%;
+    }
+    #form_section h4{
+      text-align: left;
+    }
+    
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+     #form_section input{
+        margin: 5px 0px;
+        justify-content: left;
+     }
+     .input{
+        padding: 10px 20px;
+        border-radius: 15px;
+        border: 2px solid #000;
+     }
+     .lebel{
+        padding-top: 10px;
+        font-size: 16px;
+        display: block;
+     }
+     
+     .save{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+     }
+     .button{
+        padding: 10px 30px;
+        border: 2px solid #000;
+     }
+     .button_1{
+        text-align: left;
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+     }
+     .button_1_1{
+        border-radius: 50px;
+        
+     }
+     .button_1_1:hover{
+        color: #fff;
+        background-color: #000;
+     }
+     .save label{
+        padding-top: 10px;
+        font-size: 16px;
+        padding-left: 0px;
+        
+     }
+     .result{
+        font-size: 18px;
+        text-align: left;
+        font-weight: 700;
+     }
+     
+    .other{
+        margin-left: 75px;
+    }
+    .tittle{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .inc{
+        margin-left: 0px;
+     }
+    .oRent{
+        margin-left: 0px;
+    }
+    .hRent{
+        margin-left: 0px;
+    }
+    .other{
+        margin-left: 5px;
+    }
+
+
+    .input_save{
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 2px solid #000;
+    }
+    .button_2{
+        border-radius: 10px;
+    }
+   
+    .button_2:hover{
+        color: #fff;
+        background-color: #000;
+    }
+}
