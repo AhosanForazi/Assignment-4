@@ -15,10 +15,11 @@ function calculate() {
     document.getElementById("demo").innerHTML = expenditure;
     document.getElementById("balace").innerHTML = Balance;
     if (income < 0) {
-
         document.getElementById("demo").innerHTML = "negetive value not accepted";
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("balace").innerHTML = "Error";
+        document.getElementById("balace").style.color = "red";
         return false;
-
     }
 }
 
@@ -35,10 +36,15 @@ function mySavings() {
     var save = Balance - sving;
     document.getElementById("save").innerHTML = sving;
     document.getElementById("rBalance").innerHTML = save;
-    if (income < 0) {
-        document.getElementById("demo").innerHTML = "negetive value not accepted";
+    if (sav < 0 &&income < 0) {
+        document.getElementById("save").innerHTML = "negetive value not accepted";
+        document.getElementById("save").style.color ="red";
+        document.getElementById("rBalance").innerHTML = "Error";
+        document.getElementById("rBalance").style.color = "red";
         return false;
     }
+    
+
 }
 
 
