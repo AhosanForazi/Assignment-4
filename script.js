@@ -1,8 +1,8 @@
 
 var loader = document.querySelector(".loader");
-setTimeout(function(){
+setTimeout(function () {
     loader.style.top = "-100%"
-},4000);
+}, 4000);
 
 function calculate() {
     var income = parseFloat(document.getElementById("inc").value);
@@ -15,10 +15,10 @@ function calculate() {
     document.getElementById("demo").innerHTML = expenditure;
     document.getElementById("balace").innerHTML = Balance;
     if (income < 0) {
-        
+
         document.getElementById("demo").innerHTML = "negetive value not accepted";
         return false;
-        
+
     }
 }
 
