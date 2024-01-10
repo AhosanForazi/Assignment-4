@@ -7,7 +7,7 @@
 body {
     height: 100%;
     width: 100%;
-    background-color: #D4C6A1;
+    background-color: #d4c6a134;
 }
 
 .loader {
@@ -72,16 +72,14 @@ body {
 }
 
 #container {
-    
-    min-height: 500px;
+    min-height: 470px;
     width: 100%;
     display: flex;
 }
 
 #img_section {
-    
-    min-height: 500px;
-    width: 50%;
+    min-height: 470px;
+    width: 55%;
 }
 
 #img_section img {
@@ -91,13 +89,16 @@ body {
 }
 
 #form_section {
-    min-height: 500px;
-    width: 50%;
+    min-height: 470px;
+    width: 45%;
     padding-top: 5px;
     text-align: center;
+    
 }
 
 #form_section h4 {
+    margin-top: 4%;
+    margin-bottom: 2%;
     text-align: center;
 }
 
@@ -125,8 +126,8 @@ input::-webkit-inner-spin-button {
 
 .save {
     display: flex;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
     align-items: center;
     justify-content: center;
     padding-left: 5px;
@@ -140,8 +141,8 @@ input::-webkit-inner-spin-button {
 .button_1 {
     text-align: center;
     margin-left: 120px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .button_1_1 {
@@ -161,6 +162,7 @@ input::-webkit-inner-spin-button {
 }
 
 .result {
+    padding: 1% 0%;
     font-size: 18px;
     text-align: center;
     font-weight: 900;
