@@ -7,7 +7,7 @@
 body {
     height: 100%;
     width: 100%;
-
+    background-color: #D4C6A1;
 }
 
 .loader {
@@ -63,48 +63,39 @@ body {
 }
 
 #main_div {
-    height: 100vh;
-    width: 100%;
 
+    height: 485px;
+    min-width: 100vw;
 }
 
 #main_div h2 {
     font-size: 25px;
-    color: transparent;
     text-align: center;
-    background: linear-gradient(to right, orange, rgba(240, 50, 50, 0.717));
-    -webkit-background-clip: text;
-    text-shadow: 0 0 2px orange;
-    animation: anime 1s infinite alternate;
-}
-
-@keyframes anime {
-    100% {
-        text-shadow: 0 0 2px red;
-    }
+    background-color: #5E5968;
+    padding: 18px 0;
 }
 
 #container {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    margin-top: 20px;
     display: flex;
 }
 
 #img_section {
     height: 100%;
-    width: 70%;
+    width: 50%;
 }
 
 #img_section img {
     width: 100%;
-    height: 720px;
+    height: 100%;
 }
 
 #form_section {
-    height: 85%;
-    width: 45%;
-    margin: 30px;
+    height: 100%;
+    width: 50%;
+    padding-top: 5px;
+    text-align: center;
 }
 
 #form_section h4 {
@@ -135,20 +126,23 @@ input::-webkit-inner-spin-button {
 
 .save {
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
 }
 
 .button {
-    padding: 10px 30px;
+    padding: 8px 30px;
     border: 2px solid #000;
 }
 
 .button_1 {
     text-align: center;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 120px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .button_1_1 {
@@ -168,9 +162,10 @@ input::-webkit-inner-spin-button {
 }
 
 .result {
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
     font-weight: 900;
+    margin-left: 90px;
 }
 
 .inc {
@@ -188,12 +183,6 @@ input::-webkit-inner-spin-button {
 .other {
     margin-left: 75px;
 }
-
-.tittle {
-    padding-top: 25px;
-    padding-bottom: 10px;
-}
-
 .input_save {
     padding: 10px 20px;
     border-radius: 5px;
@@ -214,7 +203,12 @@ input::-webkit-inner-spin-button {
 }
 
 
-@media (max-width :600px) {
+
+
+
+
+
+@media (max-width :700px) {
 
     .loader h1 {
         font-size: 10vw;
@@ -225,28 +219,37 @@ input::-webkit-inner-spin-button {
     }
 
     #img_section {
-        height: 100%;
-        width: 70%;
         display: none;
     }
-
+    #main_div {
+        height: 100vh;
+        width: 100vw;
+    }
     #form_section {
-        height: 95%;
-        width: 100%;
+        height: 95vh;
+        width: 100vw;
+        padding: 20px;
+    }
+    #main_div h2 {
+        font-size: 20px;
+        padding: 20px 0;
+        color: #fff;
     }
 
     #form_section h4 {
-        text-align: left;
+        text-align: center;
     }
 
     #form_section input {
         margin: 5px 0px;
-        justify-content: left;
+        display: block;
     }
 
     .lebel {
         font-size: 16px;
         display: block;
+        text-align: left;
+        padding-top: 0px;
     }
 
     .save {
@@ -262,12 +265,16 @@ input::-webkit-inner-spin-button {
         display: block;
         font-size: 16px;
         padding-left: 0px;
+        text-align: left;
+        padding-top: 5px;
+        font-size: 16px;
     }
 
     .result {
         font-size: 18px;
-        text-align: left;
+        text-align: center;
         font-weight: 700;
+        margin-left: 0px;
     }
 
     .inc {
@@ -287,11 +294,10 @@ input::-webkit-inner-spin-button {
     }
 
     .tittle {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
-
     .extra_padding {
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
 }
