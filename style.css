@@ -192,87 +192,15 @@ input::-webkit-inner-spin-button {
 
 
 
-
-
-
 @media (max-width :600px) {
     
-
-
-    .loader{
-        height: 100%;
-        width: 100%;
-        background-color: black;
-        position: fixed;
-        z-index: 999;
-        top: 0;
-        transition: all ease 0.7s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .loader h1{
-        color: transparent;
         font-size: 10vw;
-        background: linear-gradient(to right, #DFFF00,orange,#FF1300);
-        -webkit-background-clip: text;
-        position: absolute;
-        opacity: 0;
-        animation-name: load;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation-timing-function: linear;
     }
-    .loader h1:nth-child(2){
-       animation-delay: 2s;
-    }
-    .loader h1:nth-child(3){
-        animation-delay: 3s;
-    }
-    @keyframes load{
-        0%{
-            opacity: 0;
-        }
-        10%{
-            opacity: 1;
-        }
-        90%{
-            opacity: 1;
-        }
-        100%{
-            opacity: 0;
-        }
-    }
+  
     
-
-
-
-
-    #main_div{
-        height: 100vh;
-        width: 100%;
-        
-    }
-    #main_div h2{
-        font-size: 25px;
-        color: transparent;
-        text-align: center;
-        background: linear-gradient(to right, orange,rgba(240, 50, 50, 0.717));
-        -webkit-background-clip: text;
-        text-shadow: 0 0 2px orange;
-        animation: anime 1s infinite alternate;
-    }
-    @keyframes anime{
-        100%{
-            text-shadow: 0 0 2px red;
-        }
-    }
     #container{
-        height: 100vh;
-        width: 100%;
         display: block;
-        
-        
     }
     #img_section{
         height: 100%;
@@ -287,52 +215,25 @@ input::-webkit-inner-spin-button {
       text-align: left;
     }
     
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
      #form_section input{
         margin: 5px 0px;
         justify-content: left;
      }
-     .input{
-        padding: 10px 20px;
-        border-radius: 15px;
-        border: 2px solid #000;
-     }
+    
      .lebel{
-        padding-top: 10px;
         font-size: 16px;
         display: block;
      }
      
      .save{
         display: block;
-        margin-top: 20px;
-        margin-bottom: 20px;
-     }
-     .button{
-        padding: 10px 30px;
-        border: 2px solid #000;
      }
      .button_1{
         text-align: left;
         margin-left: 0px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-     }
-     .button_1_1{
-        border-radius: 50px;
-        
-     }
-     .button_1_1:hover{
-        color: #fff;
-        background-color: #000;
      }
      .save label{
         display: block;
-        padding-top: 10px;
         font-size: 16px;
         padding-left: 0px;
         
@@ -342,14 +243,6 @@ input::-webkit-inner-spin-button {
         text-align: left;
         font-weight: 700;
      }
-     
-    .other{
-        margin-left: 75px;
-    }
-    .tittle{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
 
     .inc{
         margin-left: 0px;
@@ -363,22 +256,11 @@ input::-webkit-inner-spin-button {
     .other{
         margin-left: 5px;
     }
-
-
-    .input_save{
-        padding: 10px 20px;
-        border-radius: 5px;
-        border: 2px solid #000;
-    }
-    .button_2{
-        border-radius: 10px;
-        
+    .tittle{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
    
-    .button_2:hover{
-        color: #fff;
-        background-color: #000;
-    }
     .extra_padding{
         padding-bottom: 50px;
     }
